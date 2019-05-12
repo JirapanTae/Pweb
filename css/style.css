@@ -32,7 +32,7 @@ body {
 }
 .menubar ul.menu {
     list-style: none;
-    float: right;
+    float: left;
 }
 .menubar ul.menu li {
     float: left;
