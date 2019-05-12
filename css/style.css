@@ -49,3 +49,7 @@ body {
     border-bottom: 2px solid #333;
     padding-bottom: 0;
 }
+.info1_area img{
+    width: 80%; 
+    height:450px;
+}
