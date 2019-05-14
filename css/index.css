@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .clearfix {
@@ -53,6 +52,8 @@ body {
     border-top: 5px solid #333;
     padding-top: 0;
 }
+/*   ---Menubar---  */
+
 .info1_area img{
     width: 80%; 
     height:450px;
