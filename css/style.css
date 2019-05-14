@@ -41,13 +41,17 @@ body {
 .menubar ul.menu li a {
     text-decoration: none;
     color: #333;
-    border-bottom: 2px solid transparent;
+    border-bottom: 5px solid transparent;
     padding-bottom: 20px;
+    border-top: 5px solid transparent;
+    padding-top: 20px;
     transition: all 0.3s ease;
 }
 .menubar ul.menu li a:hover {
-    border-bottom: 2px solid #333;
+    border-bottom: 5px solid #333;
     padding-bottom: 0;
+    border-top: 5px solid #333;
+    padding-top: 0;
 }
 .info1_area img{
     width: 80%; 
