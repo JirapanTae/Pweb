@@ -15,7 +15,7 @@ body {
 .menubar {
     width: 100%;
     height: 50px;
-    background: #fff;
+    background: #F8B013;
     box-shadow: 0 0 10px #666; 
 }
 
@@ -39,7 +39,8 @@ body {
 }
 .menubar ul.menu li a {
     text-decoration: none;
-    color: #333;
+    color: #FC0404;
+    font-size: 
     border-bottom: 5px solid transparent;
     padding-bottom: 20px;
     border-top: 5px solid transparent;
@@ -47,9 +48,9 @@ body {
     transition: all 0.3s ease;
 }
 .menubar ul.menu li a:hover {
-    border-bottom: 5px solid #333;
+    border-bottom: 5px solid #FC0404;
     padding-bottom: 0;
-    border-top: 5px solid #333;
+    border-top: 5px solid #FC0404;
     padding-top: 0;
 }
 /*   ---Menubar---  */
@@ -116,7 +117,20 @@ header .container .header_area
 }
 
 /*   ---data---   */
+.fanpage
+{
+    width: 100%;
+    height: 250px;
+    font-size: 25px;
+}
+.fanpage .container .fanpage_area
+{
+    height: 250px;
+}
+/*   ---fanpage---   */
 footer
 {
     text-align: center;
+    background-color: #F8B013;
 }
+/*  ---footer---  */
