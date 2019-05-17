@@ -2,4 +2,15 @@ body
 {
     margin: 0;
     padding: 0;
+    background-color: #FCBB04;
+}
+.img .profile
+{
+    text-align: center;
+}
+.img .profile img
+{
+    width: 200px;
+    height: 250px;
+    border-radius: 45%;
 }
