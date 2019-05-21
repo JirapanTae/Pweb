@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: whitesmoke;
 }
 
 .clearfix {
@@ -48,6 +49,30 @@ body {
     border-bottom: 2px solid #333;
     padding-bottom: 0;
 }     /*menubar*/
+.data .title_header
+{
+    background-image: url(https://images.unsplash.com/photo-1455459182396-ae46100617cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80);
+    background-size: cover;
+    text-align: center;
+    max-height: 550px;
+    width: 100%;
+    text-align: center;
+}
+.data .title_header .text
+{
+    padding: 10% 150px;
+    color: #fff;
+    font-style: bold;
+    font-size: 20px;
+}
+.data .title_header .text h1
+{
+    margin: 0;
+}
+.data .title_header .text span
+{
+    padding-top: 10px;
+}/*header*/
 .table
 {
     padding-top: 3rem;
@@ -65,7 +90,7 @@ body {
 }
 .detail .team
 {
-    padding: 30px;
+    padding: auto;
     text-align: center;
     font-size: 30px;
     background-color: bisque;
@@ -95,6 +120,10 @@ body {
     {
         width: 100%;
     }
+    .data .title_header .text
+    {
+        padding: 10%;
+    }
 }
 @media only screen and (max-width : 500px)
 {
@@ -105,5 +134,9 @@ body {
     .container
     {
         width: 100%;
+    }
+    .data .title_header .text
+    {
+        padding: 10%;
     }
 }/*response*/
