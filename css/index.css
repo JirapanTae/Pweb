@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.menubar {
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    box-shadow: 0 0 10px #666; 
+}
+
+.menubar .logo {
+    float: left;
+}
+
+.menubar h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+    padding: 10px;
+}
+.menubar ul.menu {
+    list-style: none;
+    float: right;
+}
+.menubar ul.menu li {
+    float: left;
+    margin-right: 20px;
+}
+.menubar ul.menu li a {
+    text-decoration: none;
+    color: #333;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 20px;
+    transition: all 0.3s ease;
+}
+.menubar ul.menu li a:hover {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0;
+}     /*menubar*/
+.table
+{
+    padding-top: 3rem;
+}
+.title
+{
+    background-color: tomato;
+    text-align: center;
+}
+.detail
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.detail .team
+{
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    background-color: bisque;
+    border: 5px solid #333;
+}
+.detail .team img
+{
+    width: 300px;
+    height: 350px;
+}
+.detail .team a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    background-color: red;
+    border: 3px solid #161616;
+    padding: 10px;
+}/*table Team*/
+@media only screen and (max-width : 1000px)
+{
+    .detail
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+    .container
+    {
+        width: 100%;
+    }
+}
+@media only screen and (max-width : 500px)
+{
+    .detail
+    {
+        grid-template-columns: 1fr;
+    }
+    .container
+    {
+        width: 100%;
+    }
+}/*response*/
