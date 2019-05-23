@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: whitesmoke;
+    background-color:whitesmoke;
 }
 
 .clearfix {
@@ -16,7 +16,7 @@ body {
 .menubar {
     width: 100%;
     height: 50px;
-    background: #fff;
+    background: #ffffff;
     box-shadow: 0 0 10px #666; 
 }
 
@@ -49,69 +49,84 @@ body {
     border-bottom: 2px solid #333;
     padding-bottom: 0;
 }     /*menubar*/
-.data .title_header
+.header
 {
-    background-image: url(https://images.unsplash.com/photo-1455459182396-ae46100617cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80);
-    background-size: cover;
-    text-align: center;
-    max-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    text-align: center;
+    height: 150px;
+    background-color: #333;
+    border: 3px solid #161616;
 }
-.data .title_header .text
+.header p 
 {
-    padding: 10% 150px;
-    color: #fff;
-    font-style: bold;
-    font-size: 20px;
+    font-size: 100px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
 }
-.data .title_header .text h1
+.typing
 {
-    margin: 0;
+    position: relative;
+    line-height: 50px;
+    display: inline-block;
+    color: #ffffff;
+    min-width: 1px;
+    min-height: 24px;
 }
-.data .title_header .text span
+.typing:after
 {
-    padding-top: 10px;
-}/*header*/
-.table
-{
-    padding-top: 3rem;
+    content: "";
+    position: absolute;
+    top: -15%;
+    width: 1px;
+    height: 150%;
+    border-right: 2px solid #ffffff;
+    right: -2px;
+    animation: blink .5s infinite ease;
 }
-.title
+@keyframes blink
 {
-    background-color: tomato;
-    text-align: center;
-}
-.detail
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}/*Header*/
+.team_champ
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    padding-bottom: 10px;
+    grid-gap: 1rem;
+    padding: 3rem;
 }
-.detail .team
+.team_champ .team
 {
-    padding-bottom: 10%;
     text-align: center;
-    font-size: 30px;
-    background-color: bisque;
-    border: 5px solid #333;
+    border: 3px solid #161616;
 }
-.detail .team img
+.team_champ .team p
+{
+    color: black;
+    font-size: 30px;
+}
+.team_champ .team img
 {
     width: 300px;
     height: 350px;
-    padding-top: 5%;
 }
-.detail .team a
+.team_champ .team .line_up
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.team_champ .team .line_up a
 {
     text-decoration: none;
-    font-size: 20px;
-    color: black;
-    background-color: red;
-    border: 3px solid #161616;
-    padding: 10px;
-}/*table Team*/
+}/*teaam_champion*/
 footer
 {
     background-color: #666;
@@ -121,7 +136,7 @@ footer
 }/*footer*/
 @media only screen and (max-width : 1000px)
 {
-    .detail
+    .team_champ
     {
         grid-template-columns: 1fr 1fr;
     }
@@ -136,7 +151,7 @@ footer
 }
 @media only screen and (max-width : 700px)
 {
-    .detail
+    .team_champ
     {
         grid-template-columns: 1fr;
     }
